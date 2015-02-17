@@ -1,0 +1,23 @@
+  <tr>
+  	<td class="otsikko-ala">
+
+		<p class="small">
+		
+		
+		<a href="https://www.facebook.com/groups/rockworks/" target="_blank" title="Web-Studio Facebook-ryhmään" alt="Web-Studio Facebook-ryhmään">
+			<%=image_tag("facebook_logo-green.png", alt: "Tommi Tiihonen", :class=> "fb", :align=> "right")%>
+		</a>
+			
+		<a href="https://www.facebook.com/pilvipalvelut" target="_blank" title="Web-Studio Facebook-kotisivulle" alt="Web-Studio Facebook-kotisivulle">
+			<%=image_tag("facebook_logo.png", alt: "Tommi Tiihonen", :class=> "fb", :align=> "right")%>
+		</a>
+		
+			<strong>Web Studio</strong>
+      	<br>
+			The World at Your Fingertips
+		</p>
+
+	</td>
+  </tr>
+  
+  

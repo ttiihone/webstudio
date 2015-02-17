@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WEB STUDIO | <%= yield(:title) %></title>
+  
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %>
+
+</head>
+<body>
+
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+
+<div class="background"></div>
+<div class="intro"></div>
+<div class="intro-gradientcorners"></div>
+
+<section class="wrapper">
+	<section class="content">
+
+<%= yield %>
+
+	</section>
+</section>
+
+<%= render "/layouts/footer" %>
+
+</body>
+</html>

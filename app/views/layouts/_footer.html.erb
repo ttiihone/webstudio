@@ -1,0 +1,65 @@
+<div class="footer">
+	
+    <div class="footer-container">
+    </div>
+    
+    <div class="menu-container">
+        <div class="menu">
+    	
+<!--ETUSIVU -->
+
+<%= link_to content_tag(:span, 'ETUSIVU'), etusivu_path , :id=>"etusivu-link"%>
+
+<!--ESITTELY -->
+
+<% if current_page?(esittely_path) || current_page?(root_path) %>
+		<%= link_to content_tag(:span, 'Esittely'), "#", :class=>"selected" %>
+<% else %>
+		<%= link_to content_tag(:span, 'Esittely'), esittely_path %>
+<% end %>
+
+<!--PALVELUT -->
+
+<% if current_page?(palvelut_path) %>
+		<%= link_to content_tag(:span, 'Palvelut'), "#", :class=>"selected" %>
+<% else %>
+		<%= link_to content_tag(:span, 'Palvelut'), palvelut_path %>
+<% end %>
+
+<!--GALLERIA-->
+
+<!--
+<% if current_page?(galleria_path) %>
+		<%= link_to content_tag(:span, 'GALLERIA'), "#", :class=>"selected" %>
+<% else %>
+		<%= link_to content_tag(:span, 'GALLERIA'), galleria_path %>
+<% end %>
+-->
+
+<!--LINKIT-->
+
+<% if current_page?(linkit_path) %>
+		<%= link_to content_tag(:span, 'Linkit'), "#", :class=>"selected" %>
+<% else %>
+		<%= link_to content_tag(:span, 'Linkit'), linkit_path %>
+<% end %>
+
+<!--TARJOUS-->
+
+<% if current_page?(tarjous_path) %>
+		<%= link_to content_tag(:span, 'Tarjous'), "#", :class=>"selected" %>
+<% else %>
+		<%= link_to content_tag(:span, 'Tarjous'), tarjous_path %>
+<% end %>
+
+<!--CONTACT-->
+
+<% if current_page?(info_path) %>
+		<%= link_to content_tag(:span, 'Info'), "#", :class=>"selected" %>
+<% else %>
+		<%= link_to content_tag(:span, 'Info'), info_path %>
+<% end %>
+
+		</div>
+	</div>
+</div>

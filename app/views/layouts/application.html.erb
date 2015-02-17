@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+  <title>WEB STUDIO | <%= yield(:title) %></title>
+  
+  <%= favicon_link_tag 'ICON-web-studio.ico' %>  
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %>
+  
+  <%= set_meta_tags :description => "Kotisivupalvelut persoonallisesti, laadukkaasti ja käypään hintaan. Google-optimointi kaupan päälle. Käytän uusimpia Web-tekniikoita ammattitaitoisesti ja palvelen 24/7. Ota yhteyttä. WEB-STUDIO - www.web-studio.fi" %>
+<!--  <%= set_meta_tags :keywords => %w[kotisivut websivut suunnittelu ylläpito editointi palvelu grafiikka valokuvat videot mainonta facebook google optimointi] %>
+-->
+  
+</head>
+
+<body>
+
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+
+<div class="background"></div>
+<div class="intro"></div>
+<div class="intro-gradientcorners"></div>
+
+
+<%= render "/layouts/tausta" %>
+
+<div class="wrapper-content">
+	<div class="content">
+		<%= yield %>
+	</div>
+</div>
+
+<%= render "/layouts/footer" %>
+
+<%= render "/layouts/logosmall" %>
+
+</body>
+</html>

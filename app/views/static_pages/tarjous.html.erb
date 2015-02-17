@@ -1,0 +1,139 @@
+<% provide(:title, 'Tarjouspyyntö') %>		
+		
+<%= render "/layouts/pagetop" %>
+
+<!--
+	
+	<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+	
+</head>
+
+
+<div id="herjat"></div>
+
+-->
+
+<table align="center" id="pages" class="taulukko" cellspacing="0" cellpadding="20">
+
+		<tr>
+	    	<td class="otsikko">
+				<h1>TARJOUSPYYNTÖ</h1>
+			</td>
+		</tr>
+	  
+		<tr>
+		  	<td>
+				<div align="left">
+		
+	<form name="contactform" action="send_form_email.php" method="post" id="contactform">
+				  
+				<p id="offer-otsikko">Pyydä tarjous:</p>
+					  
+				<p>
+				    
+				    <label>
+				      <input type="checkbox" id="web" name="web" class="free" value="YES"/>
+				      Kotisivuista
+				    </label>
+				  
+				<br>
+				    
+				    <label>
+				      <input type="checkbox" id="google" name="google" class="free" value="YES"/>
+				      WEB-promootiosta (Facebook, Twitter, Google, jne.)
+				    </label>
+				    
+				<br>
+				    
+				    <label>
+				      <input type="checkbox" id="miksaus" name="miksaus" class="free" value="YES"/>
+					  Musiikin miksauksesta ja/tai masteroinnista
+				    </label>
+				  
+				<br>
+
+				    <label>
+				      <input type="checkbox" id="grafiikka" name="grafiikka" class="free" value="YES"/>
+				      Grafiikan tai videon suunnittelusta ja/tai editoinnista
+				    </label>
+				    
+				<br>
+				    
+				    <label>
+				      <input type="checkbox" id="promo" name="promo" class="free" value="YES"/>
+				      Media-promootiosta (levy-yhtiöt, radiot, lehdet yms.)
+				    </label>
+				  
+				</p>
+					  
+				<p id="offer-otsikko">Pyydä infoa:</p>
+				
+			    <p>
+				    
+				    <label>
+				        <input type="checkbox" id="general" name="general" class="free" value="YES"/>
+				        Yleistä kysyttävää
+					</label>
+				    
+				      <br />
+				      
+					<label>
+				        <input type="checkbox" id="info" name="info" class="free" value="YES"/>
+				        Lisätietoja palveluista
+					</label>
+				    
+			    </p>  
+				
+	
+			    <p id="offer-otsikko">
+			       	<label style="font-size: 1em" for="toive">Lisätietoja ja toiveita:</label>
+
+					<br />
+
+					<textarea name="toive" id="toive" style="width: 100%; margin-top: 4px" rows="8"></textarea>
+				</p>
+	
+	
+	
+				<p id="offer-otsikko" style="padding-top: 15px">Yhteystiedot:</p>
+				  
+				  
+				  <table style="margin-top: 14px; background-color: rgba(0,0,0,0.3)" width="100%" border="0" cellspacing="8">
+				    <tr>
+				      <td align="right" class="textdown"><strong>E-mail*:</strong></td>
+				      <td><input style="width: 260px; height: 12px" name="email" type="email" required id="email" form="contactform" autocomplete="on"></td>
+				    </tr>
+				    <tr>
+				      <td align="right" class="textdown">Nimi:</td>
+				      <td><input style="width: 260px; height: 12px" name="etunimi" type="text" id="etunimi" form="contactform" autocomplete="on"></td>
+				    </tr>
+				    <tr>
+				      <td align="right" class="textdown">Puhelin:</td>
+				      <td><input style="width: 260px; height: 12px" name="telephone" type="tel" id="telephone" form="contactform"></td>
+				    </tr>
+				  </table>
+								
+				<p align="center">
+				    <input id="laheta" type="submit" value="Lähetä">
+				      </input>
+				</p>
+				<p align="center">
+				    <input id="tyhjenna" type="reset" value="Tyhjennä">
+				    </input>
+				</p>
+
+
+				</form>
+	
+			</div>
+			
+		</td>
+	</tr>
+	
+<%= render "/layouts/textbottom" %>
+	
+</table>

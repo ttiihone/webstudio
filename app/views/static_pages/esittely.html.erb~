@@ -1,0 +1,37 @@
+<% provide(:title, 'Esittely') %>
+
+<%= render "/layouts/pagetop" %>
+
+<table align="center" id="pages" class="taulukko" cellspacing="0" cellpadding="20">
+  <tr>
+    <td id="otsikko">
+    	<h1>ESITTELY</h1>
+    </td>
+  </tr>
+  
+  <tr>
+  	<td>
+        
+    <div style="padding-top:10px; text-align: center">    
+      <%=image_tag("tommi.png", alt: "Tommi Tiihonen")%>
+      <br />Tommi Tiihonen
+      <br />Web-suunnittelu / graafinen suunnittelu / videot / Facebook-promootio
+    </div>
+
+<div style="text-align: justify;">
+
+      <p>Tähän osoitteeseen avataan pian WEB-STUDIO:n uudet websivut.</p>
+      <p>WEB-STUDIO tulee olemaan yksi kolmesta yrityksestäni. Muut ovat MUSIC-STUDIO ja CREATIVE-STUDIO. Yritysten nimet kertonevat hyvin toimintamallista.</p>
+      <p>Saat kauttani kilpailukykyiseen hintaan mitä tahansa - vaikka Chat-liittymän - kotisivuillesi. Ja mikä parasta, teen Google-optimoinnin ja peruspromootion kaupan päälle.</p>
+      <p>Tutustu sivuillani toimintaani. En halua tehdä liian monimutkaisia ja teknisiä kotisivuja, joten viihtykää silti.</p>
+      <p>Simple is more effective - and whatever You wish for, I can deliver.</p>
+</div>
+      <p>
+      	Web-Studio
+      	<br>
+        The World at Your Fingertips
+      </p>
+    
+    </td>
+  </tr>
+</table>

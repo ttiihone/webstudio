@@ -1,0 +1,19 @@
+class StaticPagesController < ApplicationController
+  def esittely
+  end
+
+  def yhteys
+  end
+
+  def galleria
+  end
+
+  def laitteisto
+  end
+
+  def tarjous
+  end
+
+  def palvelut
+  end
+end

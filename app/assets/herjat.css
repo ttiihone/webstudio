@@ -1,0 +1,15 @@
+.errors {
+    background-color: palegoldenrod;
+    border-radius:20px;
+    width:100%;
+    display:block;
+
+}
+
+
+.errors p {
+    color: indianred;
+    font-weight:bold;
+    padding:10px;
+    display:block;
+}
